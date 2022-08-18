@@ -1,0 +1,9 @@
+<b><p> UserName: </p></b>
+<%= @user.username %>
+<b><p> Email: </p></b>
+<%= @user.email %>
+
+<div>
+<br> <%= button_to "Edit details", edit_user_path , method: :get %>
+<br> <%= button_to "Home", root_path , method: :get %>
+</div>

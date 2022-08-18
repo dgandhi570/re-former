@@ -1,0 +1,10 @@
+<h1>Users</h1>
+
+<% @users.each do |s| %>
+    <br>
+   <b> <%= link_to s.username, s %> </b>
+    <%= s.email %>
+<% end %>
+<br>
+<br>
+<%= button_to "New User", new_user_path, method: :get %>
